@@ -1,7 +1,7 @@
 import React, { createContext, useState, useEffect } from 'react'
 
 
-const BlogContext = createContext();
+export const BlogContext = createContext();
 
 const STORAGE_KEY = "blog_posts";
 
@@ -21,22 +21,22 @@ const initailPosts = [
     },
 ]
 
-const BlogProvider = () => {
+const BlogProvider = ({children}) => {
     const [posts, setPosts] = useState([])
 
-    useEffect = (() =>{
+    useEffect(() => {
         const stored = localStorage.getItem(STORAGE_KEY);
         if (stored) {
             setPosts(JSON.parse(stored));
         } else {
-            setPosts(initailPosts)
-            localStorage.setItem(STORAGE_KEY, JSON.stringfy(initailPosts))
+            setPosts(initailPosts);
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(initailPosts));
         }
-    }, [])
+    }, []);
 
-    useEffect = (() => {
-        localStorage.setItem(STORAGE_KEY, JSON.stringfy(posts))
-    }, [posts])
+    useEffect(() => {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(posts));
+    }, [posts]);
 
     const addPost = (post) => {
         setPosts((prev) => [...prev, post])

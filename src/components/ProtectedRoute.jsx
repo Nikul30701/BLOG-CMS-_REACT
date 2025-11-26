@@ -5,7 +5,7 @@ import { AuthContext } from '../context/AuthContext';
 const ProtectedRoute = ({children}) => {
 
     const {isAuthenticated} = useContext(AuthContext);
-    const location = useLocation
+    const location = useLocation();
 
     if (!isAuthenticated) {
         return <Navigate to='/login' replace state={{ from: location }} />
