@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { BlogContext } from "../context/BlogContext";
 import {AuthContext} from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
-import PostFrom from "../components/PostFrom";
+import PostForm from "../components/PostForm";
 
 const CreatePost = () => {
     const {user} = useContext(AuthContext);
@@ -32,7 +32,7 @@ const CreatePost = () => {
                     Draft a new article and share it with the world.
                 </p>
             </div>
-            <PostFrom onSubmit={handleCreate} />
+            <PostForm onSubmit={handleCreate} />
         </div>
     )
 }
