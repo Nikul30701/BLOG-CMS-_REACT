@@ -19,7 +19,7 @@ const NavBar = () => {
                     to="/"
                     className="text-lg font-semibold text-white tracking-tight"
                 >
-                    Blog CMS
+                    Nikul's Blog
                 </Link>
                 <div className="flex items-center gap-4">
                     <NavLink to="/" className={linkClass}>

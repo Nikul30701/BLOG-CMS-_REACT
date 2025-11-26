@@ -129,4 +129,4 @@ const PostForm = ({initalValues, onSubmit}) => {
     )
 }
 
-export default PostForm
+export default PostForm;
