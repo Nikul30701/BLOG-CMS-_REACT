@@ -1,52 +1,58 @@
 # 📝 Blog CMS — React + Context API + Tailwind CSS
 
-Ek modern, responsive aur frontend-only **Blog Content Management System**, jo React, React Router, Context API aur Tailwind CSS ka use karke banaya gaya hai.  
-Public users blogs browse kar sakte hain, aur authenticated users content manage kar sakte hain.
+A modern, responsive, frontend-only **Blog Content Management System**, built using React, Context API, React Router & Tailwind CSS.  
+Public users can browse blogs, while authenticated users can create, edit, and manage posts.
 
 ---
 
-## 🚀 Live Demo
-(Deployment link add karein — Netlify/Vercel)
+## 🔗 Live Demo
+[Deploy on Netlify / Vercel & paste link here]
+
+---
+
+## 📌 Status
+✅ Completed — Frontend Only  
+🛠️ Backend Integration — Optional (Future)
+
+---
+
+## 🛡️ Tech Stack & Tools
+
+![React](https://img.shields.io/badge/React-18-blue?logo=react)
+![Vite](https://img.shields.io/badge/Vite-Build%20Tool-646CFF?logo=vite)
+![React Router](https://img.shields.io/badge/React_Router-v6-red?logo=reactrouter)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.0-38BDF8?logo=tailwindcss)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow?logo=javascript)
+![LocalStorage](https://img.shields.io/badge/Storage-local-orange)
+![Git](https://img.shields.io/badge/Git-Version_Control-F05032?logo=git)
 
 ---
 
 ## ✅ Features
 
 ### Public Users
-- Blog listing with excerpts
-- Search & category filter
-- Individual blog detail page (slug-based routing)
+- View all blog posts
+- Search by title
+- Category-based filtering
+- View full article via dynamic slug routing
 - Fully responsive UI
 
-### Authenticated Users (Admin Demo)
+### Authenticated Users
 - Login / Logout
 - Protected Dashboard
-- Create new post
-- Edit existing post
-- Delete post with confirmation
+- Create new blog post
+- Edit & update posts
+- Delete post with confirmation modal
 
-### Technical Highlights
-- Global Auth & Blog State using Context API
-- Protected Routes with redirect
-- LocalStorage persistence
-- Reusable UI Components
-- Conditional rendering & error UI
-- Clean folder structure & scalable architecture
+### Under the Hood
+- Global Authentication State — Context API
+- Blog CRUD — Context + LocalStorage
+- ProtectedRoute for restricted pages
+- Tailwind UI + utility-based styling
+- Clean component architecture
 
 ---
 
 ## 🔐 Demo Credentials
 
-Email: admin@blog.com
-
-Password: password
-
-
-## 🛠️ Tech Stack
-
-- React 18
-- React Router DOM v6
-- Context API (Global State)
-- Tailwind CSS
-- LocalStorage
-- Vite
+![Login Image]("C:\Users\ASUS\OneDrive\Pictures\Screenshots 1\Screenshot 2025-11-26 180443.png")
