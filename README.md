@@ -52,7 +52,3 @@ Public users can browse blogs, while authenticated users can create, edit, and m
 - Clean component architecture
 
 ---
-
-## 🔐 Demo Credentials
-
-![Login Image]("C:\Users\ASUS\OneDrive\Pictures\Screenshots 1\Screenshot 2025-11-26 180443.png")
